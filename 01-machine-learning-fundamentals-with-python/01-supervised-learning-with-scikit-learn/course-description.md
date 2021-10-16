@@ -11,3 +11,6 @@ In the previous chapter, you used image and political datasets to predict binary
 
 #### 1-3 Fine-tuning your model
 Having trained your model, your next task is to evaluate its performance. In this chapter, you will learn about some of the other metrics available in scikit-learn that will allow you to assess your model's performance in a more nuanced manner. Next, learn to optimize your classification and regression models using hyperparameter tuning.
+
+#### 1-4 Preprocessing and pipelines
+This chapter introduces pipelines, and how scikit-learn allows for transformers and estimators to be chained together and used as a single unit. Preprocessing techniques will be introduced as a way to enhance model performance, and pipelines will tie together concepts from previous chapters.
