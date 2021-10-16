@@ -6,3 +6,5 @@ As a data scientist, you will need to clean data, wrangle and munge it, visualiz
 #### 2-1 Importing data from the Internet
 The web is a rich source of data from which you can extract various types of insights and findings. In this chapter, you will learn how to get data from the web, whether it is stored in files or in HTML. You'll also learn the basics of scraping and parsing web data.
 
+#### 2-2 Interacting with APIs to import data from the web
+In this chapter, you will gain a deeper understanding of how to import data from the web. You will learn the basics of extracting data from APIs, gain insight on the importance of APIs, and practice extracting data by diving into the OMDB and Library of Congress APIs.
