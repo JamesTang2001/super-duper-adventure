@@ -9,3 +9,10 @@ In this chapter, you'll learn how to overcome some of the most common dirty data
 '''
 Video
 '''
+
+
+
+# Common data types
+'''
+
+'''
