@@ -98,4 +98,94 @@ Videos
 
 
 
-# 
+# Creating variables
+'''
+Variables in Python hold a value that may consist of varying data types. Variable names can contain letters, underscores, and numbers.
+Let's create three types of Python variables that might be useful in finance.
+
+Instructions 1/3
+-Assign the string 'Apple' to the variable company_1.
+Instructions 2/3
+-Assign the integer 2017 to the variable year_1.
+Instructions 3/3
+-Assign the float 229.23 to the variable revenue_1.
+'''
+# Create company_1
+company_1 = "Apple"
+print(company_1)
+
+# Create year_1
+year_1 = 2017
+print(year_1)
+
+# Create revenue_1
+revenue_1 = 229.23
+print(revenue_1)
+
+
+
+# Determining types
+'''
+Python has a built-in command type() that can determine the type of a variable or literal value. Let's determine the data types of the variables you created in the last exercise.
+
+Instructions
+-Print the data types associated with the variables company_1, year_1 and revenue_1.
+'''
+# Type of company_1
+print(type(company_1))
+
+# Type of year_1
+print(type(year_1))
+
+# Type of revenue_1
+print(type(revenue_1))
+
+
+
+# Booleans in Python
+'''
+Booleans are used to represent True or False statements in Python. Boolean comparisons include:
+
+operators   descriptions
+>	greater than
+>=  greater than or equal
+<	less than
+<=	less than or equal
+==	equal
+!=	does not equal
+
+Let's use boolean comparison operations to assess the revenues of three companies.
+
+Instructions 1/2
+-The name of company 1 is provided as company_1. Determine if the variable test_company is equivalent to company_1.
+Instructions 2/2
+-The revenue of company 1 and company 2 are provided as revenue_1 and revenue_2, respectively. Using a comparison operator, determine if revenue_1 is greater than revenue_2.
+'''
+# Test equality
+test_company = 'apple'
+print(company_1 == test_company)
+
+# Compare revenue_1 and revenue_2
+print(revenue_1 > revenue_2)
+
+
+
+# Combining data types
+'''
+Different types of data types have different properties. For example, strings and floats cannot be mathematically combined. To convert a variable x to an integer, you can use the command int(x). Similarly, to convert a variable y to a string, you can use the command str(y).
+It's time for you to change some data types to complete and print a statement.
+The variables company_1, year_1, and revenue_1 are available in your workspace.
+
+Instructions
+-Convert the data type of variables year_1, and revenue_1 to string.
+-Use these new variables to create and print the following sentence: "The revenue of Apple in 2017 was $229.23 billion."
+'''
+# Update data types
+year_1_str = str(year_1)
+revenue_1_str = str(revenue_1)
+
+# Create a complete sentence combining only the string data types
+sentence = 'The revenue of ' + company_1 + ' in ' + year_1_str + ' was $' + revenue_1_str + ' billion.'
+
+# Print sentence
+print(sentence)
