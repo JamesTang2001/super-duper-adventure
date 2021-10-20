@@ -8,3 +8,6 @@ This chapter is an introduction to basics in Python, including how to name varia
 
 #### 1-2 Lists
 This chapter introduces lists in Python and how they can be used to work with data.
+
+#### 1-3 Arrays in Python
+This chapter introduces packages in Python, specifically the NumPy package and how it can be efficiently used to manipulate arrays.
