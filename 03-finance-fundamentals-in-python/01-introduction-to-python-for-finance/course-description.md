@@ -11,3 +11,9 @@ This chapter introduces lists in Python and how they can be used to work with da
 
 #### 1-3 Arrays in Python
 This chapter introduces packages in Python, specifically the NumPy package and how it can be efficiently used to manipulate arrays.
+
+#### 1-4 Visualization in Python
+In this chapter, you will be introduced to the Matplotlib package for creating line plots, scatter plots, and histograms.
+
+#### 1-5 S&P 100 Case Study
+In this chapter, you will get a chance to apply all the techniques you learned in the course on the S&P 100 data.
