@@ -11,5 +11,5 @@ Understanding how to prep your data is an essential skill for working in Python.
 
 
 #####
-https://github.com/just4jc/DataCamp-3
-https://trenton3983.github.io/
+* https://github.com/just4jc/DataCamp-3
+* https://trenton3983.github.io/
