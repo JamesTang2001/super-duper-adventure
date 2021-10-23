@@ -7,3 +7,6 @@ Are you a financial or business analyst, or simply looking for an easier way to 
 In this chapter, you’ll learn how to create and manipulate Python datetime objects to help you identify key financial events, such as Black Friday. You’ll also learn how to store and efficiently look up items using Python dictionaries.
 
 #### 2-2 Control Flow and Logic
+Through hands-on activities, you’ll discover how to use Boolean logic to determine truth and use comparison and equality operators to control execution in if-statements and loops.
+
+#### 2-3 Pandas Dataframe
