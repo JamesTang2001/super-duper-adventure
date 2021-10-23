@@ -7,3 +7,6 @@ In this course you'll learn all about using linear classifiers, specifically log
 In this chapter you will learn the basics of applying logistic regression and support vector machines (SVMs) to classification problems. You'll use the scikit-learn library to fit classification models to real data.
 
 #### 3-2 Loss functions
+In this chapter you will discover the conceptual framework behind logistic regression and SVMs. This will let you delve deeper into the inner workings of these models.
+
+#### 3-3 Logistic regression
