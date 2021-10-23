@@ -206,4 +206,70 @@ Video
 
 
 
-# 
+# Creating and accessing dictionaries
+'''
+The CUSIP number is a nine-digit alphanumeric number used to identify most securities owned by American and Canadian companies. Let's suppose that in your work at a FinTech startup, you are tasked with writing reports for clients. Your internal reports use CUSIP numbers, but your clients need to see stock symbols. Create a mapping of CUSIP numbers to stock symbols that makes it easy to do lookups. A dictionary is an ideal data structure for this kind of mapping as it lets you do fast lookups based on a key-value (the CUSIP number in this case).
+
+Instructions 1/4
+Question
+There is more than one way to create a Python dictionary. Choose the answer which shows ways to create an empty dictionary named cusip_lookup.
+
+Possible Answers
+-cusip_lookup = {} and cusip_lookup = dict()
+-cusip_lookup = [] and cusip_lookup = dict()
+-cusip_lookup() and cusip_lookup = {}
+-cusip_lookup = [] and cusip_lookup = dict()
+
+# cusip_lookup = {} and cusip_lookup = dict()
+
+Instructions 2/4
+-Add an entry for the company Alphabet with a key of 38259P706 and a value of GOOG.
+Instructions 3/4
+-Add an entry for Apple to cusip_lookup with a key of 037833100 and a value of AAPL.
+Instructions 4/4
+-Lookup the symbol for Apple in cusip_lookup using its CUSIP number, 037833100.
+'''
+cusip_lookup = {}
+
+# Alphabet
+cusip_lookup['38259P706'] = 'GOOG'
+
+# Apple
+cusip_lookup['037833100'] = 'AAPL'
+
+# Lookup Apple
+cusip_lookup['037833100']
+
+
+
+# Accessing safely and deleting
+'''
+Alphabet Inc. was formed in 2015 as part of a corporate restructuring of Google. Analyzing the change in stock prices over time is a common task in the world of finance. One way to store stock data is to use the dates as keys and the prices as values in a dictionary. In this exercise, you access stock closing price data for the company Alphabet for various dates without knowing beforehand if each date has data available. The supplied dictionary alphabet_hist has datetimes as keys and stock closing prices as values. A datetime object named closing_price_date is supplied.
+
+Instructions 1/3
+-Access the closing price for the day before in a way that is safe, even if that date is missing.
+Instructions 2/3
+-Supply the default value 'Missing' to use if a key is missing from a dictionary so that your reporting will be more meaningful.
+Instructions 3/3
+-After deciding that the data might be incorrect, delete the entry whose value is held in closing_price_date from alphabet_hist.
+'''
+# Closing price for day before
+day_before_closing_price_date = closing_price_date - timedelta(days=1)
+
+# Safely print closing price day before or None if it's missing
+print(alphabet_hist.get(day_before_closing_price_date))
+
+# Get day eight weeks in future
+future_closing_price_date = closing_price_date + timedelta(weeks=8)
+
+# Safely get value for the future date or the string 'Missing'
+print(alphabet_hist.get(future_closing_price_date, "Missing"))
+
+# Print with key
+print(alphabet_hist)
+
+# Remove entry
+del(alphabet_hist[closing_price_date])
+
+# Print with key deleted
+print(alphabet_hist)
