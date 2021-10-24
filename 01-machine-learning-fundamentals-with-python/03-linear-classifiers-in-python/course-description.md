@@ -10,3 +10,7 @@ In this chapter you will learn the basics of applying logistic regression and su
 In this chapter you will discover the conceptual framework behind logistic regression and SVMs. This will let you delve deeper into the inner workings of these models.
 
 #### 3-3 Logistic regression
+In this chapter you will delve into the details of logistic regression. You'll learn all about regularization and how to interpret model output.
+
+#### 3-4 Support Vector Machines
+In this chapter you will learn all about the details of support vector machines. You'll learn about tuning hyperparameters for these models and using kernels to fit non-linear decision boundaries.
