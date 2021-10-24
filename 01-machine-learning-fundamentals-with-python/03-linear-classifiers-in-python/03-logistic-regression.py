@@ -12,7 +12,7 @@ Video
 
 
 
-# 
+# Regularized logistic regression
 '''
 
 '''

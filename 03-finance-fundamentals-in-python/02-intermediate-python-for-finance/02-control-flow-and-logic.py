@@ -135,3 +135,170 @@ Instructions
 -Set the variable not_prices to True if you do not have closing prices for today.
 -Set the variable get_prices to True if the market is closed and you don't have closing prices yet.
 '''
+print(closing_prices)
+
+# Assigning True if we need to get the prices
+not_prices = not closing_prices
+
+print(not_prices)
+
+# Get prices if market is closed and we don't have prices
+get_prices = not (market_closed and not_prices)
+
+print(get_prices)
+
+
+
+# If statements
+'''
+Video
+'''
+
+
+
+# Control statements
+'''
+An if statement consists of a controlling statement and a group of statements whose execution is controlled. What elements make up a control statement?
+
+Possible Answers
+
+-The keyword if, a series of statements with the same indentation, and a colon.
+-The keyword if, an expression which evaluates to True or False, and a colon.
+-The keyword if, an expression which evaluates to True or False, and a code block.
+
+# The keyword if, an expression which evaluates to True or False, and a colon.
+'''
+
+
+
+# Comparing sales and purchases
+'''
+If statements let you branch your code to take different actions depending on the state of your data. Imagine you are working at a small firm trying to keep the number items sold in balance with those purchased. You are supplied with two lists, purchases, which contains items purchased, and sales, which contains items sold. Use if statements to compare the two lists.
+
+Instructions 1/3
+-Assign the number of sales to the variable num_sales.
+-Check if the number of purchases is less than the number of sales.
+Instructions 2/3
+-Write a control statement to check if there were fewer sales than purchases.
+Instructions 3/3
+-Check if both sales and purchases are empty.
+'''
+# Get number of purchases
+num_purchases = len(purchases)
+# Get number of sales
+num_sales = len(sales)
+
+# Check if more sales than purchases
+if num_purchases < num_sales:
+    print('buy more')
+
+# Get number of purchases
+num_purchases = len(purchases)
+# Get number of sales
+num_sales = len(sales)
+
+# Check if fewer sales than purchases
+if num_sales < num_purchases :
+    print('sell more')
+
+# Get number of purchases
+num_purchases = len(purchases)
+# Get number of sales
+num_sales = len(sales)
+
+# Check if both lists are empty
+if not (purchases or sales) :
+    print('No sales or purchases')
+
+
+
+# Branching with elif and else
+'''
+elif and else statements let you extend your code to handle cases not handled by your initial control statement. In this exercise you will sort security transactions based on their stock symbol. You might do this to better understand how some popular stocks are bought and sold. You are provided with the variable trn which holds the transaction, and the empty lists appl, tsla, and amzn to hold sorted transactions.
+Instructions 1/3
+-If the symbol is 'APPL', add it to the list appl
+Instructions 2/3
+-Write an statement to add 'TSLA' transaction to the list tsln.
+-Add the case that adds 'AMZN' transactions to the list amzn.
+Instructions 3/3
+-If the symbol is any other company, print it.
+'''
+# Get the symbol value
+symbol = trn['symbol']
+
+# Check if Apple stock
+if symbol == 'APPL':
+    appl.append(trn)
+# Check if Tesla stock
+elif symbol == 'TSLA':
+    tsla.append(trn)
+# Check if Amazon stock
+elif symbol == 'AMZN':
+    amzn.append(trn)
+# Handle other companies
+else:
+    print(symbol)
+
+
+
+# For and while loops
+'''
+Video
+'''
+
+
+
+# Breaking out of a for loop
+'''
+You can use loops to perform operations which change depending on the data. For this exercise, you given a list of purchase transactions in the variable buys. You need to calculate the final balance of your client's account after the purchases have been made, but you do not want the account to have a negative balance. The initial account balance is provided in the variable balance.
+
+Instructions 1/2
+-Create a loop which will iterate through the items in buys.
+-Subtract the cost of a purchase from the provided variable balance.
+Instructions 2/2
+-Check if the new balance would be negative.
+-Stop the iteration of the loop to prevent a negative balance.
+'''
+# Loop through buys
+for buy in buys:
+    print('Buying ' + buy['symbol'])
+    new_balance = balance - buy['total_cost']
+    balance = new_balance
+
+print(balance)
+
+for buy in buys:
+    print('Buying ' + buy['symbol'])
+    new_balance = balance - buy['total_cost']
+    if new_balance < 0:
+        print('Unable to finish buys')
+        break
+    balance = new_balance
+
+print(balance)
+
+
+
+# Controlling loop execution
+'''
+A typical pattern is to create a while loop with True as its condition and use a break statement to end it. In this exercise, your manager wants you to assemble a list of the five most recent years that the US had a positive trade gap. The dictionary nea is a mapping of datetimes to floats representing the net export for a given year. An empty list named surplus_years and a datetime named query_date are supplied.
+
+Instructions
+-Create a loop with a condition that is always true.
+-Skip steps where net exports are less than zero.
+-Check the number of surplus years gathered.
+-Stop the loop once five years have been gathered.
+'''
+# Loop while true
+while True:
+    net_exports = nea.get(query_date, -1)
+    query_date = datetime(query_date.year - 1, 1, 1)
+    # Skip if net exports are not positive
+    if net_exports < 0:
+        continue
+    surplus_years.append(query_date)
+    # Check if 5 years have been collected
+    if len(surplus_years) == 5:
+        # Stop the loop
+        break
+print(surplus_years)
