@@ -10,3 +10,6 @@ In this chapter, you’ll learn how to create and manipulate Python datetime obj
 Through hands-on activities, you’ll discover how to use Boolean logic to determine truth and use comparison and equality operators to control execution in if-statements and loops.
 
 #### 2-3 Pandas Dataframe
+Discover how to create and access DataFrames with pandas using financial data from other data structures, including Dicts, lists, and CSV files. You’ll then uncover additional insights, as you aggregate data across rows or columns, calculate averages, and extend your data using functions.
+
+#### 2-4 Working with NASDAQ Stock Data
